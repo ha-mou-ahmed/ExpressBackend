@@ -6,6 +6,10 @@ app.use((req,res,next)=>{
   console.log('login...')
   next()
 })
+app.use((req,res,next)=>{
+  console.log('Authenticated...')
+  next()
+})
 
 let courses = [
     {id:1, title:'Angular'},
